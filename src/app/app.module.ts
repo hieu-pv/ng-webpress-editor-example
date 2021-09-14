@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+
+import { NgWebpressEditorModule } from '@vicoders/ng-webpress-editor';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    NgWebpressEditorModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
